@@ -1,0 +1,131 @@
+/* Stili di base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3e3e3; /* Colore di sfondo neutro */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    opacity: 0.6; /* Riduzione dell'opacità */
+    width: 150px; /* Riduzione della dimensione */
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #333; /* Colore scuro per abbinarsi agli occhiali da sole */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #555; /* Colore leggermente più chiaro per effetto hover */
+    transform: translateY(-2px);
+}
+
+/* Media Queries per la reattività */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        width: 100px; /* Riduzione della dimensione per schermi più piccoli */
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    img {
+        width: 80px; /* Riduzione della dimensione per schermi molto piccoli */
+    }
+
+    .btn {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
